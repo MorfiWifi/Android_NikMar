@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/supplier_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="56dp"
+        android:theme="@style/BaseTheme_Toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tx_viewnamecompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:text="نام شرکت:"
+                 />
+            <EditText
+                android:id="@+id/etx_camponyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:scrollbars="horizontal" />
+
+            <TextView
+                android:id="@+id/tx_camponyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:gravity="right"
+                android:padding="3dp"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/tx_viewname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:text="نام:"
+                />
+            <EditText
+                android:id="@+id/etx_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:scrollbars="horizontal" />
+
+            <TextView
+                android:id="@+id/tx_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/tx_viewadress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:text="آدرس:"/>
+            <EditText
+                android:id="@+id/etx_adress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:scrollbars="horizontal" />
+
+            <TextView
+                android:id="@+id/tx_adress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/tx_viewphon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:text="تلفن:"/>
+            <EditText
+                android:id="@+id/etx_PhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:scrollbars="horizontal" />
+
+            <TextView
+                android:id="@+id/tx_PhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/tx_viewprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:textSize="20sp"
+                android:layout_margin="3dp"
+                android:text="قیمت:"/>
+            <TextView
+                android:id="@+id/tx_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tx_viewstock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:text="قیمت در انبار:"/>
+
+            <TextView
+                android:id="@+id/tx_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/button_pruduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="لیست محصولات تولید کننده" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

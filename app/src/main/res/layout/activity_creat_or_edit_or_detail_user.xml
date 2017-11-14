@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/User_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="56dp"
+        android:theme="@style/BaseTheme_Toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tx_view_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="right"
+                android:text="ایمیل"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etx_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginRight="60dp"
+                android:enabled="true"
+                android:inputType="textEmailAddress|textEmailSubject"
+                android:scrollbars="horizontal" />
+
+            <TextView
+                android:id="@+id/tx_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:gravity="right"
+                android:padding="3dp"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tx_view_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="right"
+                android:text="رمز:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etx_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:enabled="true"
+                android:inputType="textPassword"
+                android:scrollbars="horizontal" />
+
+            <TextView
+                android:id="@+id/tx_view_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="right"
+                android:text="حقوق خالص:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etx_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:enabled="true"
+                android:inputType="number"
+                android:scrollbars="horizontal" />
+
+            <TextView
+                android:id="@+id/tx_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tx_view_Benefits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:gravity="right"
+                android:text="مزایا:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etx_Benefits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:enabled="true"
+                android:inputType="number"
+                android:scrollbars="horizontal" />
+
+            <TextView
+                android:id="@+id/tx_Benefits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tx_view_Roles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="right"
+                    android:text="نقش کاربری:"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tx_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radio_Accountant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:checked="true"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Accountant" />
+
+                    <RadioButton
+                        android:id="@+id/radio_StoreKeeper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="34dp"
+                        android:layout_marginRight="20dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="StoreKeeper" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radio_Administrator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Administrator" />
+
+                    <RadioButton
+                        android:id="@+id/radio_Secretary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Secretary" />
+                </LinearLayout>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/tx_view_OverTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="right"
+                android:text="اضافه کاری:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tx_OverTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:gravity="right"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tx_view_AbsentDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="right"
+                android:text="غیبت:"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/tx_AbsentDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="60dp"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
